@@ -5,6 +5,9 @@ body{
     background-size: cover;
 }
 
+h1 {
+    color: white;
+}
 
 .sec{
     padding-bottom: 6px;
@@ -22,9 +25,38 @@ body{
 }
 
 .table1 {
-background: rgba(255,255,255,0.5);
+     background: rgba(255,255,255,0.5);
+     border-color: white;
 }
 
+.alert {   
+    margin: auto; display: table;
+    width:40%; margin-left: 40%;
+     border-color: white;
+}
 
+.form-control {
+           margin-left:calc(10% - 80px);
+           margin-right:calc(10% - 80px);
+           border-color: white;
+}
 
+#btn{
+    font-size: 20px;
+    margin-left:calc(30% - 100px);
+    padding-left: 70px;
+    padding-right: 70px;
+    border-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
 
+#btn-change:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.t1 {
+    text-align:center; 
+    vertical-align:middle;
+}

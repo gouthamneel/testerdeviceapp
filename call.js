@@ -1,6 +1,6 @@
 $('document').ready(function (){
-  document.getElementById("btn").onclick = function ()
-  {
+  document.getElementById("btn").onclick = function (){
+      
 		var c = document.getElementById("click");
 		var country = c.options[c.selectedIndex].value;
 		var d = document.getElementById("click1");
