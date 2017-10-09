@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search App</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="call.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+	<br>
+		<h1 align="center">Database for Bugs in Mobile Devices</h1> 
+   <br/>
+   <br/>
+    
+<div class="container">        
+      <div class="row">
+             <div class="col-md-3 col-sm-3 col-xs-3">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 sec">
+            <select id="click" class="form-control">
+                      <option selected disabled>Select Country</option>
+                      <option>US</option>
+                      <option>GB</option>
+                      <option>JP</option>
+              </select>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 sec">
+       <select id="click1" class="form-control">
+             <label>Country</label>
+             <option selected disabled>Select Device</option>
+              <option>iPhone 3</option>
+              <option>iPhone 4</option>
+              <option>iPhone 4S</option>
+              <option>iPhone 5</option>
+              <option>Galaxy S3</option>
+              <option>Galaxy S4</option>
+              <option>Nexus 4</option>
+              <option>Driod Razor</option>
+              <option>Driod DNA</option>
+              <option>HTC One</option>
+      </select>
+      
+  </div>
+     <div class="col-md-3 col-sm-3 col-xs-3">
+  </div>
+</div>
+
+</div>  
+   
+    <br><br>
+       
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+            
+            <button type="button" id="btn" class="btn btn-primary">Search</button>
+            <br /><br />
+           
+<!--
+            <div id="myAlert" class="alert alert-danger">
+            <a id ="linkClose" href="#" class="close" data-dismiss="alert">&times;</a>
+              <strong>Error!</strong> No result found for this device!
+            </div>
+            
+            <button class="close" onclick="$('#alertBox').hide();; return false;">×</button>
+-->
+
+            
+<!--            <p id="demo"></p>-->
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-35"></div>
+        </div> 
+        <div class="alert-messages text-center"> </div>
+             <script>
+                 
+                function showAndDismissAlert(type, message) {
+                    var htmlAlert = '<div class="alert alert-' + type + '">' + message + '</div>';
+
+                    // Prepend so that alert is on top, could also append if we want new alerts to show below instead of on top.
+                    $(".alert-messages").prepend(htmlAlert);
+
+                    // Since we are prepending, take the first alert and tell it to fade in and then fade out.
+                    $(".alert-messages .alert").first().hide().fadeIn(200).delay(2000).fadeOut(1000, function () { $(this).remove(); });
+                }
+                 
+                </script>
+ 
+             </div>
+        </div>
+<br>
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title" align="center">Search Results</h3>
+          </div>
+          
+          <table class="table table-hover" id="dev-table" class="table1">
+              <tr>
+                <th>First Name of the Tester</th>
+                <th>Number of Bugs found</th>
+                <th>Mobile Device</th>
+              </tr>
+              <tr>
+                  <td style = "text-align: center;"></td>
+                  <td style = "text-align: center;"></td>
+                  <td style = "text-align: center;"></td>
+              </tr>
+              
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+
+</body>
+</html>
+
+
