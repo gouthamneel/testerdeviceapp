@@ -1,6 +1,5 @@
 $('document').ready(function (){
   document.getElementById("btn").onclick = function (){
-      
 		var c = document.getElementById("click");
 		var country = c.options[c.selectedIndex].value;
 		var d = document.getElementById("click1");
@@ -23,6 +22,7 @@ $('document').ready(function (){
 				{
                    showAndDismissAlert('danger', 'Sorry!! No Results Found');
                     
+                    //method1:
 //                    $('document').ready(function () {
 //                        $("#btn").click(function(){
 //                            $("#myAlert").show('fade');
@@ -35,7 +35,9 @@ $('document').ready(function (){
 //                            $("#myAlert").hide('fade'); 
 //                           
 //                           });
-//                        });                  
+//                        }); 
+                    
+                    //method2:
 //                 	document.getElementById("demo").innerHTML = "Sorry!! No results found!!";
 //    				document.getElementById("demo").style.color = "red";
 //    				document.getElementById("demo").style.fontSize = "larger";
