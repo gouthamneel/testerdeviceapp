@@ -1,5 +1,5 @@
 # testerdeviceapp
-Goal: Design and develop a web application to display data about bugs in a selected mobile device from three different countries by tester in their respective countries in an appealing way for the user.
+Goal: Design and develop a simple but robust web application to display data about bugs in a selected mobile device from three different countries by tester in their respective countries in an appealing way for the user.
 
 Stack: HTML/CSS, Bootstrap, jQuery/JavaScript, PHP and MySQL
 
